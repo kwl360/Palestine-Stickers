@@ -1,7 +1,7 @@
-package com.kwl360.stickermaker;
+package com.kwl360.wats;
 import android.content.*;import android.graphics.*;import android.net.Uri;import org.json.*;import java.io.*;import java.util.*;
 public class PackStore {
- static final String AUTH="com.kwl360.stickermaker.stickercontentprovider";
+ static final String AUTH="com.kwl360.wats.stickercontentprovider";
  static File dir(Context c,String id){File d=new File(c.getFilesDir(),"packs/"+id);d.mkdirs();return d;}
  static JSONArray packs(Context c){try{return new JSONArray(c.getSharedPreferences("packs",0).getString("data","[]"));}catch(Exception e){return new JSONArray();}}
  static void save(Context c,JSONArray a){c.getSharedPreferences("packs",0).edit().putString("data",a.toString()).apply();}
