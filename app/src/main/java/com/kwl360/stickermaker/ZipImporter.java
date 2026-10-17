@@ -1,4 +1,4 @@
-package com.kwl360.stickermaker;
+package com.kwl360.wats;
 import android.content.*;import android.net.Uri;import java.io.*;import java.util.*;import java.util.zip.*;
 public final class ZipImporter {
  public static class Result {public int imported,skipped,packs;public String warning="";}
