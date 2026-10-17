@@ -1,4 +1,4 @@
-package com.kwl360.stickermaker;
+package com.kwl360.wats;
 import android.content.*;import android.database.*;import android.database.MatrixCursor;import android.net.Uri;import android.os.*;import android.content.res.AssetFileDescriptor;import org.json.*;import java.io.*;import java.util.*;
 public class StickerProvider extends ContentProvider {
  static final String[] META={"identifier","name","publisher","tray_image_file","image_data_version","avoid_cache","publisher_email","publisher_website","privacy_policy_website","license_agreement_website","animated_sticker_pack"};
