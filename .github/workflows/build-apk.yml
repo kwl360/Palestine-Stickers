@@ -1,7 +1,7 @@
 name: Build Android APK
 on:
   push:
-    branches: [main]
+    branches: [main, kwl_360_wats-rebuild]
   workflow_dispatch:
 permissions:
   contents: read
@@ -37,6 +37,6 @@ jobs:
       - name: Upload installable APK
         uses: actions/upload-artifact@v4
         with:
-          name: KWL-Sticker-Maker-APK
+          name: kwl_360_wats-APK
           path: app/build/outputs/apk/debug/*.apk
           if-no-files-found: error
